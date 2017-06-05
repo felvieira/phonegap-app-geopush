@@ -1,69 +1,59 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.gourmex" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
-    </platform>
     <platform name="android">
-        <allow-intent href="market:*" />
+    <allow-intent href="market:*" />
+    <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png" />
+    <icon density="mdpi" src="res/icons/android/icon-48-mdpi.png" />
+    <icon density="hdpi" src="res/icons/android/icon-72-hdpi.png" />
+    <icon density="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
+    <icon density="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
+    <icon density="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
     </platform>
-    <platform name="wp8">
+    <platform name="ios">
+    <allow-intent href="itms:*" />
+     <allow-intent href="itms-apps:*" />
+    <icon height="29" src="res/icons/ios/icon-small.png" width="29" />
+    <icon height="58" src="res/icons/ios/icon-small-2x.png" width="58" />
+    <icon height="87" src="res/icons/ios/icon-small-3x.png" width="87" />
+    <icon height="40" src="res/icons/ios/icon-40.png" width="40" />
+    <icon height="80" src="res/icons/ios/icon-40-2x.png" width="80" />
+    <icon height="120" src="res/icons/ios/icon-40-3x.png" width="120" />
+    <icon height="50" src="res/icons/ios/icon-50.png" width="50" />
+    <icon height="100" src="res/icons/ios/icon-50-2x.png" width="100" />
+    <icon height="57" src="res/icons/ios/icon-57.png" width="57" />
+    <icon height="114" src="res/icons/ios/icon-57-2x.png" width="114" />
+    <icon height="60" src="res/icons/ios/icon-60.png" width="60" />
+    <icon height="120" src="res/icons/ios/icon-60-2x.png" width="120" />
+    <icon height="180" src="res/icons/ios/icon-60-3x.png" width="180" />
+    <icon height="72" src="res/icons/ios/icon-72.png" width="72" />
+    <icon height="144" src="res/icons/ios/icon-72-2x.png" width="144" />
+    <icon height="76" src="res/icons/ios/icon-76.png" width="76" />
+    <icon height="152" src="res/icons/ios/icon-76-2x.png" width="152" />
+    <icon height="167" src="res/icons/ios/icon-83.5-2x.png" width="167" />
     </platform>
     <platform name="windows">
+    <icon height="150" src="res/icons/windows/Square150x150Logo.scale-100.png" width="150" />
+    <icon height="360" src="res/icons/windows/Square150x150Logo.scale-240.png" width="360" />
+    <icon height="30" src="res/icons/windows/Square30x30Logo.scale-100.png" width="30" />
+    <icon height="" src="res/icons/windows/Square310x310Logo.scale-100.png" width="" />
+    <icon height="106" src="res/icons/windows/Square44x44Logo.scale-240.png" width="106" />
+    <icon height="70" src="res/icons/windows/Square70x70Logo.scale-100.png" width="70" />
+    <icon height="170" src="res/icons/windows/Square71x71Logo.scale-240.png" width="170" />
+    <icon height="50" src="res/icons/windows/StoreLogo.scale-100.png" width="50" />
+    <icon height="120" src="res/icons/windows/StoreLogo.scale-240.png" width="120" />
+    <icon height="150" src="res/icons/windows/Wide310x150Logo.scale-100.png" width="310" />
+    <icon height="360" src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" />
+    </platform>
+    <platform name="wp8">
+    <icon height="99" src="res/icons/wp8/ApplicationIcon.png" width="99" />
+    <icon height="159" src="res/icons/wp8/Background.png" width="159" />
     </platform>
     <name>Gourmex</name>
     <description>
-        A blank PhoneGap app.
-    </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+        O Gourmex é o aplictivo de delivery completo onde você pode fazer seu pedido nas empresas cadastradas.     </description>
+    <author email="suporte@delivoro.com.br" href="http://gourmex.com">
+        Gourmex.com
     </author>
-    <icon src="icon.png" />
-
-    <icon gap:platform="ios" height="60" width="60" src="res/icons/ios/icon-60.png" />
-    <icon gap:platform="ios" height="120" width="120" src="res/icons/ios/icon-60-2x.png" />
-    <icon gap:platform="ios" height="180" width="180" src="res/icons/ios/icon-60-3x.png" />
-    <icon gap:platform="ios" height="76" width="76" src="res/icons/ios/icon-76.png" />
-    <icon gap:platform="ios" height="152" width="152" src="res/icons/ios/icon-76-2x.png" />
-    <icon gap:platform="ios" height="40" width="40" src="res/icons/ios/icon-40.png" />
-    <icon gap:platform="ios" height="80" width="80" src="res/icons/ios/icon-40-2x.png" />
-    <icon gap:platform="ios" height="57" width="57" src="res/icons/ios/icon-57.png" />
-    <icon gap:platform="ios" height="114" width="114" src="res/icons/ios/icon-57-2x.png" />
-    <icon gap:platform="ios" height="72" width="72" src="res/icons/ios/icon-72.png" />
-    <icon gap:platform="ios" height="144" width="144" src="res/icons/ios/icon-72-2x.png" />
-    <icon gap:platform="ios" height="29" width="29" src="res/icons/ios/icon-small.png" />
-    <icon gap:platform="ios" height="58" width="58" src="res/icons/ios/icon-small-2x.png" />
-    <icon gap:platform="ios" height="50" width="50" src="res/icons/ios/icon-50.png" />
-    <icon gap:platform="ios" height="100" width="100" src="res/icons/ios/icon-50-2x.png" />
-
-    <icon gap:platform="android" gap:qualifier="ldpi" src="res/icons/android/icon-36-ldpi.png" />
-    <icon gap:platform="android" gap:qualifier="mdpi" src="res/icons/android/icon-48-mdpi.png" />
-    <icon gap:platform="android" gap:qualifier="hdpi" src="res/icons/android/icon-72-hdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xhdpi" src="res/icons/android/icon-96-xhdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xxhdpi" src="res/icons/android/icon-144-xxhdpi.png" />
-    <icon gap:platform="android" gap:qualifier="xxxhdpi" src="res/icons/android/icon-192-xxxhdpi.png" />
-
-    <splash src="splash.png" />
-
-    <splash gap:platform="ios" height="480" width="320" src="res/screens/ios/screen-iphone-portrait.png" />
-    <splash gap:platform="ios" height="960" width="640" src="res/screens/ios/screen-iphone-portrait-2x.png" />
-    <splash gap:platform="ios" height="1024" width="768" src="res/screens/ios/screen-ipad-portrait.png" />
-    <splash gap:platform="ios" height="2048" width="1536" src="res/screens/ios/screen-ipad-portrait-2x.png" />
-    <splash gap:platform="ios" height="768" width="1024" src="res/screens/ios/screen-ipad-landscape.png" />
-    <splash gap:platform="ios" height="1536" width="2048" src="res/screens/ios/screen-ipad-landscape-2x.png" />
-    <splash gap:platform="ios" height="1136" width="640" src="res/screens/ios/screen-iphone-568h-2x.png" />
-    <splash gap:platform="ios" height="1334" width="750" src="res/screens/ios/screen-iphone-portrait-667h.png" />
-    <splash gap:platform="ios" height="2208" width="1242" src="res/screens/ios/screen-iphone-portrait-736h.png" />
-    <splash gap:platform="ios" height="1242" width="2208" src="res/screens/ios/screen-iphone-landscape-736h.png" />
-
-    <splash gap:platform="android" gap:qualifier="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
-    <splash gap:platform="android" gap:qualifier="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
-    <splash gap:platform="android" gap:qualifier="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
-    <splash gap:platform="android" gap:qualifier="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
-    <splash gap:platform="android" gap:qualifier="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
-    <splash gap:platform="android" gap:qualifier="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
-    <splash gap:platform="android" gap:qualifier="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
-    <splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
     
     <content src="index.html" />
     <access origin="*" />
