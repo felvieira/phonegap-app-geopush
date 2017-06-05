@@ -48,6 +48,50 @@
     <icon height="99" src="res/icons/wp8/ApplicationIcon.png" width="99" />
     <icon height="159" src="res/icons/wp8/Background.png" width="159" />
     </platform>
+
+    <preference name="SplashScreen" value="screen"/>
+    <preference name="SplashMaintainAspectRatio" value="true" />
+<platform name="android">
+    <splash density="land-hdpi" src="res/screens/android/screen-hdpi-landscape.png" />
+    <splash density="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
+    <splash density="land-mdpi" src="res/screens/android/screen-mdpi-landscape.png" />
+    <splash density="land-xhdpi" src="res/screens/android/screen-xhdpi-landscape.png" />
+    <splash density="land-xxhdpi" src="res/screens/android/screen-xxhdpi-landscape.png" />
+    <splash density="land-xxxhdpi" src="res/screens/android/screen-xxxhdpi-landscape.png" />
+    <splash density="port-hdpi" src="res/screens/android/screen-hdpi-portrait.png" />
+    <splash density="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+    <splash density="port-mdpi" src="res/screens/android/screen-mdpi-portrait.png" />
+    <splash density="port-xhdpi" src="res/screens/android/screen-xhdpi-portrait.png" />
+    <splash density="port-xxhdpi" src="res/screens/android/screen-xxhdpi-portrait.png" />
+    <splash density="port-xxxhdpi" src="res/screens/android/screen-xxxhdpi-portrait.png" />
+</platform>
+<platform name="ios">
+    <splash width="640" height="1136" src="res/screens/ios/screen-iphone-568h-2x.png" />
+    <splash width="320" height="480" src="res/screens/ios/screen-iphone-portrait.png" />
+    <splash width="640" height="960" src="res/screens/ios/screen-iphone-portrait-2x.png" />
+    <splash width="750" height="1334" src="res/screens/ios/screen-iphone-portrait-667h.png" />
+    <splash width="1242" height="2208" src="res/screens/ios/screen-iphone-portrait-736h.png" />
+    <splash width="2208" height="1242" src="res/screens/ios/screen-iphone-landscape-736h.png" />
+    <splash width="768" height="1024" src="res/screens/ios/screen-ipad-portrait.png" />
+    <splash width="1536" height="2048" src="res/screens/ios/screen-ipad-portrait-2x.png" />
+    <splash width="1024" height="768" src="res/screens/ios/screen-ipad-landscape.png" />
+    <splash width="2048" height="1536" src="res/screens/ios/screen-ipad-landscape-2x.png" />
+    <splash width="2732" height="2048" src="res/screens/ios/screen-ipad-landscape-ipadpro.png" />
+    <splash width="2048" height="2732" src="res/screens/ios/screen-ipad-portrait-ipadpro.png" />
+</platform>
+<platform name="windows">
+    <splash width="620" height="300" src="res/screens/windows/SplashScreen.scale-100.png" />
+    <splash width="1152" height="1920" src="res/screens/windows/SplashScreen.scale-240.png" />
+    <splash width="1152" height="1920" src="res/screens/windows/SplashScreenPhone.scale-240.png" />
+</platform>
+<platform name="wp8">
+    <splash width="768" height="1280" src="res/screens/wp8/SplashScreenImage.jpg" />
+    <splash width="720" height="1280" src="res/screens/wp8/SplashScreenImage.screen-720p.jpg" />
+    <splash width="480" height="800" src="res/screens/wp8/SplashScreenImage.screen-WVGA.jpg" />
+    <splash width="768" height="1280" src="res/screens/wp8/SplashScreenImage.screen-WXGA.jpg" />
+</platform>
+
+
     <name>Gourmex</name>
     <description>
         O Gourmex é o aplictivo de delivery completo onde você pode fazer seu pedido nas empresas cadastradas.     </description>
