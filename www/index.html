@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;connect-src 'self' https://nominatim.openstreetmap.org">-->
+    <meta http-equiv="Content-Security-Policy" content="default-src gap://ready file://* *; style-src 'self' http://* https://* 'unsafe-inline'; script-src 'self' http://* https://* 'unsafe-inline' 'unsafe-eval'">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!--<link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css">-->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
+    <link rel="stylesheet" type="text/css" href="css/splash.css">
+
+    <title>Gourmex</title>
+
+</head>
+
+<body>
+
+   
+    <!--<div id="fullpage" class="app">-->
+    <div id="fullpage">
+        <div class="section" id="section">
+            <!--<div class="slide" id="slide0">
+                <div class="content">
+
+                    <div id="deviceready" class="blink">
+                        <p class="event listening">Connecting to Device</p>
+                        <p class="event received">Device is Ready</p>
+                        <button type="button" id="showDeviceInfo">Pegar Minha Info</button>
+                        <button type="button" id="abrirGeo">Pegar Minha Localização</button>
+                        <button type="button" id="abrirGourmexNormal">Abrir Gourmex</button>
+                    </div>
+
+                    <div id="lat"></div>
+                    <div id="lon"></div>
+                    <div id="cep"></div>
+                    <div id="endereco"></div>
+                    <div id="rua"></div>
+                    <div id="bairro"></div>
+                    <div id="cidade"></div>
+                    <div id="pais"></div>
+                </div>
+            </div>-->
+
+            <div class="slide" id="slide1">
+                <div class="content">
+                    <div class="block-content">
+                        <img src="img/icon.png" class="icone-app" alt="">
+                    </div>
+                    <div class="block-content">
+                        <h1>Gourmex.com</h1>
+                         <div id="loader-pre-container" class="hide-loader">
+                            <div id="loader-pre"></div>
+                        </div>
+                        <div id="lat"></div>
+                        <div id="lon"></div>
+                        <div id="cep"></div>
+                        <div id="endereco"></div>
+                        <div id="rua"></div>
+                        <div id="bairro"></div>
+                        <div id="cidade"></div>
+                        <div id="pais"></div>
+                    </div>
+                    <div class="block-content bottom">
+                        <h2 class="txt-desc">Clique em Localização para que o Gourmex encontre onde você está e liste os melhores deliveries perto
+                            de você. Ou clique em pedir e preencha seu CEP</h2>
+                        <button type="button" id="abrirGeo" class="flat-butt flat-primary-butt">Localização</button>
+                        <button type="button" id="abrirGourmexNormal" class="flat-butt flat-info-butt">Pedir</button>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="slide" id="slide2">
+                <div class="content">
+                    <img src="img/icon" class="icone-app" alt="">
+                    <h1>Mais Páginas!</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="OneSignalUserID" style="display:none;"></div>
+        <div id="OneSignalPushToken" style="display:none;"></div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript " src="js/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!--<script type="text/javascript " src="js/javascript.fullPage.min.js"></script>-->
+
+
+
+    <script type="text/javascript">
+        // JQUERY VERSION
+        $(document).ready(function () {
+
+            $('#fullpage').fullpage({
+                anchors: ['firstPage', 'secondPage', 'lastPage'],
+                sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+                menu: '#menu',
+                css3: true,
+
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+                controlArrows: true,
+                // navigation: true,
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+                loopHorizontal: true,
+                fadingEffect: true,
+                autoScrolling: true,
+            });
+        });
+
+        // JAVASCRIPT VERSION
+        // fullpage.initialize('#fullpage', {
+        //     anchors: ['firstPage', 'secondPage', 'lastPage'],
+        //     sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        //     menu: '#menu',
+        //     css3: true,
+
+        //     slidesNavigation: true,
+        //     slidesNavPosition: 'bottom',
+        //     controlArrows: true,
+        //     // navigation: true,
+        //     keyboardScrolling: true,
+        //     animateAnchor: true,
+        //     recordHistory: true,
+        //     loopHorizontal: true,
+        //     fadingEffect: true,
+        //     autoScrolling: true,
+        // });
+    </script>
+
+</body>
+
+</html>

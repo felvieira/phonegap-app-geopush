@@ -1,0 +1,349 @@
+html, body {
+    height: 100%;
+}
+
+/*fix container pai */
+/*.main-content-component {
+    height: 100%;
+    max-width: 100%;
+}*/
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.splash-01 {
+    background: #fff url("../img/1.png") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+}
+
+.splash-02 {
+    background: #fff url("../img/2.png") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+}
+
+.splash-03 {
+    background: #fff url("../img/3.png") no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+    height: auto;
+}
+
+.content {
+    height: 100%;
+}
+
+/* keep full widget on smaller screens */
+@media (max-width: 767px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-img-min {
+    padding-top: 5%;
+    position: absolute;
+    width: 100%;
+}
+
+/* Custom CSS
+		 * --------------------------------------- */
+body {
+    font-family: arial, helvetica;
+    color: #F2F2F2;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+p {
+    font-size: 2em;
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Slide 1
+		 * --------------------------------------- */
+#slide0 {
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#slide0 h1 {
+    color: #444;
+}
+
+#slide0 p {
+    color: #333;
+    opacity: 0.4;
+}
+
+/* Slide 2
+		 * --------------------------------------- */
+#slide1 {
+    background: #e52d27;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#slide1 h1 {
+    color: #fff;
+}
+
+#slide1 p {
+    opacity: 0.8;
+}
+
+/* Slide 3
+		 * --------------------------------------- */
+#slide2 {
+    background: #e65c00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F9D423, #e65c00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9D423, #e65c00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#slide2 h1 {
+    color: #F2F2F2;
+}
+
+#slide2 p {
+    opacity: 0.6;
+}
+
+.flat-butt {
+    display: block;
+    margin: 15px 8px;
+    float: left;
+    width: 45%;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 12px 20px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    /* outline: 0; */
+}
+
+.flat-butt:hover {
+    background: #005580;
+}
+
+.flat-primary-butt {
+    background: #ffeb00;
+    color: #766d00;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.flat-primary-butt:hover {
+    background: #ffeb00;
+}
+
+.flat-info-butt {
+    background: #111111;
+    /* background: #ffeb00; */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.flat-info-butt:hover {
+    background: #000000;
+}
+
+.flat-outer-butt {
+    padding: 11px 0px;
+    box-shadow: #BDC3C7 2px 2px 0px;
+}
+
+.fp-controlArrow.fp-next {
+    border-width: 10.5px 0 10.5px 10px!important;
+}
+
+.fp-controlArrow.fp-prev {
+    border-width: 10.5px 10px 10.5px 0!important;
+}
+
+img.icone-app {
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    max-height: 160px;
+}
+
+.block-content {
+    width: 100%;
+    display: block;
+}
+
+.block-content.bottom {
+    bottom: 15%;
+    position: absolute;
+    /* width: 90%; */
+    /* margin: 0 auto; */
+}
+
+.txt-desc {
+    font-size: 1.6em;
+    max-width: 86%;
+    margin: 0 auto;
+    text-transform: initial;
+}
+
+.block-content > h1 {
+    text-transform: uppercase;
+    font-size: 2.7em;
+    font-weight: 700;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #ffeb00;
+}
+
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #ffeb00!important;
+}
+
+.fp-controlArrow.fp-prev {
+    border-color: transparent #ffeb00 transparent transparent!important;
+}
+
+/*loader*/
+
+/* Rotation */
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* The loader */
+div#loader-pre {
+  
+    /* Dimensions */
+  
+width: 4em;
+  
+height: 4em;
+  
+z-index: 0;
+  
+    /* Draw circle */
+  
+border-radius: 50%;
+  
+    /* Position */
+  
+position: relative;
+  
+margin: 1em auto;
+  
+    /* Border */
+  
+border: 0.25em solid #ac1515;
+  
+    /* Background color*/
+  
+background-color: #af1616;
+    
+    /* Animate */
+  
+animation: rotate 1.5s infinite linear;
+}
+
+/* Position a circle underneath */
+div#loader-pre:after {
+  
+    /* Must have this to work */
+  
+content: "";
+  
+    /* Dimensions */
+  
+width: 4em;
+  
+height: 4em;
+  
+    /* Draw circle */
+  
+border-radius: 50%;
+  
+    /* Border */
+  
+border: 0.25em solid #ffeb00;
+  
+border-top: 0.25em solid #dc2824;
+  
+border-right: 0.25em solid #db2824;
+    
+    /* Dimensions */
+  
+width: 3.5em;
+  
+height: 3.5em;
+  
+    /* Position underneath div */
+  
+z-index: -1;
+  
+    /* Background color*/
+  
+background-color: #ac1515;
+  
+    /* Position */
+  
+position: absolute;
+  
+left: 0em;
+  
+top: 0em;
+}
+
+
+.hide-loader {
+     display: none;
+     transition: 0.7s;
+}
+
+div#loader-pre-container {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    /* padding-top: 10%; */
+    /* position: absolute; */
+    transition: 0.7s;
+    /* background: rgba(255, 188, 0, 1); */
+}
