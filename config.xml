@@ -41,8 +41,8 @@
     <icon height="170" src="res/icons/windows/Square71x71Logo.scale-240.png" width="170" />
     <icon height="50" src="res/icons/windows/StoreLogo.scale-100.png" width="50" />
     <icon height="120" src="res/icons/windows/StoreLogo.scale-240.png" width="120" />
-    <icon height="150" src="res/icons/windows/Wide310x150Logo.scale-100.png" width="310" />
-    <icon height="360" src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" />
+    <!--<icon height="150" src="res/icons/windows/Wide310x150Logo.scale-100.png" width="310" />
+    <icon height="360" src="res/icons/windows/Wide310x150Logo.scale-240.png" width="744" />-->
     </platform>
     <platform name="wp8">
     <icon height="99" src="res/icons/wp8/ApplicationIcon.png" width="99" />
