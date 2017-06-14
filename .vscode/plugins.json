@@ -1,1 +1,1 @@
-{"plugins":["cordova-plugin-device","cordova-plugin-crosswalk-webview","cordova-plugin-firebase","cordova-plugin-geolocation","cordova-plugin-compat","cordova-plugin-whitelist","onesignal-cordova-plugin"]}
+{"plugins":["cordova-plugin-crosswalk-webview","cordova-plugin-device","cordova-plugin-firebase","cordova-plugin-geolocation","cordova-plugin-compat","cordova-plugin-whitelist","onesignal-cordova-plugin"]}

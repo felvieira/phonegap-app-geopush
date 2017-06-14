@@ -1,0 +1,36 @@
+{
+    "name": "com.phonegap.gourmex",
+    "version": "1.0.0",
+    "displayName": "Gourmex",
+    "cordova": {
+        "platforms": [
+            "android",
+            "windows"
+        ],
+        "plugins": {
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "23+",
+                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+                "XWALK_MODE": "embedded",
+                "XWALK_MULTIPLEAPK": "true"
+            },
+            "cordova-plugin-device": {},
+            "cordova-plugin-firebase": {},
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-whitelist": {},
+            "onesignal-cordova-plugin": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "^6.1.2",
+        "cordova-plugin-compat": "^1.0.0",
+        "cordova-plugin-crosswalk-webview": "^2.3.0",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-firebase": "^0.1.21",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-windows": "^4.4.3",
+        "onesignal-cordova-plugin": "^2.1.2"
+    }
+}
