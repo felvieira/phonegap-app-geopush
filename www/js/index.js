@@ -198,7 +198,7 @@ function onSuccess(position) {
                     var pushToken =  document.getElementById("OneSignalPushToken").textContent;
 
                     var urlRedirect = 'http://www.gourmex.com/?isApp=true';
-                    var urlRedirectFinal = urlRedirect + "&endereco.cep=" + encodeURI(postCode) + "&rua=" +  encodeURI(road) + "&bairro="+  encodeURI(suburb) + "&cidade=" +  encodeURI(city) + "&endereco.longitude=" + encodeURI(lon) + "endereco.latitude" + encodeURI(lat) + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
+                    var urlRedirectFinal = urlRedirect + "&endereco.cep=" + encodeURI(postCode) + "&rua=" +  encodeURI(road) + "&bairro="+  encodeURI(suburb) + "&cidade=" +  encodeURI(city) + "&endereco.longitude=" + encodeURI(lon) + "endereco.latitude=" + encodeURI(lat) + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
                     console.log(urlRedirectFinal);
 
                     alert("Sua URL: " + urlRedirectFinal);
