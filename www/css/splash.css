@@ -2,6 +2,60 @@ html, body {
     height: 100%;
 }
 
+/* Fundo do slide */
+#slide1 {
+    background: #e52d27;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b31217, #e52d27);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#slide1 h1 {
+    color: #fff;
+}
+
+#slide1 p {
+    opacity: 0.8;
+}
+
+/*FIM Fundo do slide */
+/* botao pedir */
+.flat-butt {
+    display: block;
+    margin: 15px 8px;
+    float: left;
+    width: 45%;
+    border-radius: 6px;
+    font-family: "Lato", sans-serif;
+    font-size: 16.5px;
+    padding: 12px 20px;
+    border: 0;
+    background: #34495E;
+    color: #FFF;
+    cursor: pointer;
+    /* outline: 0; */
+}
+
+.flat-butt:hover {
+    background: #005580;
+}
+
+/* FIM botao pedir */
+/* botao localizacao */
+.flat-primary-butt {
+    background: #ffeb00;
+    color: #766d00;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.flat-primary-butt:hover {
+    background: #ffeb00;
+}
+
+/* FIM botao localizacao */
 /*fix container pai */
 /*.main-content-component {
     height: 100%;
@@ -14,6 +68,7 @@ html, body {
     background-size: cover;
 }
 
+/* Se for usar em imagem*/
 .splash-01 {
     background: #fff url("../img/1.png") no-repeat top center;
     -webkit-background-size: cover;
@@ -44,6 +99,7 @@ html, body {
     height: auto;
 }
 
+/* Se for usar em imagem*/
 .content {
     height: 100%;
 }
@@ -62,8 +118,6 @@ html, body {
     width: 100%;
 }
 
-/* Custom CSS
-		 * --------------------------------------- */
 body {
     font-family: arial, helvetica;
     color: #F2F2F2;
@@ -84,8 +138,6 @@ p {
     text-align: center;
 }
 
-/* Slide 1
-		 * --------------------------------------- */
 #slide0 {
     background: #000000;
     /* fallback for old browsers */
@@ -104,27 +156,6 @@ p {
     opacity: 0.4;
 }
 
-/* Slide 2
-		 * --------------------------------------- */
-#slide1 {
-    background: #e52d27;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #b31217, #e52d27);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #b31217, #e52d27);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-#slide1 h1 {
-    color: #fff;
-}
-
-#slide1 p {
-    opacity: 0.8;
-}
-
-/* Slide 3
-		 * --------------------------------------- */
 #slide2 {
     background: #e65c00;
     /* fallback for old browsers */
@@ -140,37 +171,6 @@ p {
 
 #slide2 p {
     opacity: 0.6;
-}
-
-.flat-butt {
-    display: block;
-    margin: 15px 8px;
-    float: left;
-    width: 45%;
-    border-radius: 6px;
-    font-family: "Lato", sans-serif;
-    font-size: 16.5px;
-    padding: 12px 20px;
-    border: 0;
-    background: #34495E;
-    color: #FFF;
-    cursor: pointer;
-    /* outline: 0; */
-}
-
-.flat-butt:hover {
-    background: #005580;
-}
-
-.flat-primary-butt {
-    background: #ffeb00;
-    color: #766d00;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.flat-primary-butt:hover {
-    background: #ffeb00;
 }
 
 .flat-info-butt {
@@ -243,99 +243,65 @@ img.icone-app {
 }
 
 /*loader*/
-
 /* Rotation */
 @keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* The loader */
 div#loader-pre {
-  
     /* Dimensions */
-  
-width: 4em;
-  
-height: 4em;
-  
-z-index: 0;
-  
+    width: 4em;
+    height: 4em;
+    z-index: 0;
     /* Draw circle */
-  
-border-radius: 50%;
-  
+    border-radius: 50%;
     /* Position */
-  
-position: relative;
-  
-margin: 1em auto;
-  
+    position: relative;
+    margin: 1em auto;
     /* Border */
-  
-border: 0.25em solid #ac1515;
-  
+    border: 0.25em solid #ac1515;
     /* Background color*/
-  
-background-color: #af1616;
-    
+    background-color: #af1616;
     /* Animate */
-  
-animation: rotate 1.5s infinite linear;
+    animation: rotate 1.5s infinite linear;
 }
 
 /* Position a circle underneath */
 div#loader-pre:after {
-  
     /* Must have this to work */
-  
-content: "";
-  
+    content: "";
     /* Dimensions */
-  
-width: 4em;
-  
-height: 4em;
-  
+    width: 4em;
+    height: 4em;
     /* Draw circle */
-  
-border-radius: 50%;
-  
+    border-radius: 50%;
     /* Border */
-  
-border: 0.25em solid #ffeb00;
-  
-border-top: 0.25em solid #dc2824;
-  
-border-right: 0.25em solid #db2824;
-    
+    border: 0.25em solid #ffeb00;
+    border-top: 0.25em solid #dc2824;
+    border-right: 0.25em solid #db2824;
     /* Dimensions */
-  
-width: 3.5em;
-  
-height: 3.5em;
-  
+    width: 3.5em;
+    height: 3.5em;
     /* Position underneath div */
-  
-z-index: -1;
-  
+    z-index: -1;
     /* Background color*/
-  
-background-color: #ac1515;
-  
+    background-color: #ac1515;
     /* Position */
-  
-position: absolute;
-  
-left: 0em;
-  
-top: 0em;
+    position: absolute;
+    left: 0em;
+    top: 0em;
 }
 
-
 .hide-loader {
-     display: none;
-     transition: 0.7s;
+    display: none;
+    transition: 0.7s;
 }
 
 div#loader-pre-container {

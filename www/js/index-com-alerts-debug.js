@@ -29,6 +29,7 @@ var app = {
             };
 
             window.plugins.OneSignal
+                // .startInit("50258523-927f-4c3e-864d-61d67b123a4d")
                 .startInit("d2e1ce8a-39e6-44da-9d8b-cc22e4fc65f2")
                 .handleNotificationOpened(notificationOpenedCallback)
                 .endInit();
@@ -72,6 +73,13 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
+        // var parentElement = document.getElementById(id);
+        // var listeningElement = parentElement.querySelector('.listening');
+        // var receivedElement = parentElement.querySelector('.received');
+
+        // listeningElement.setAttribute('style', 'display:none;');
+        // receivedElement.setAttribute('style', 'display:block;');
+
         console.log('Received Event: ' + id);
     },
 
@@ -83,6 +91,13 @@ function GeoRedirect() {
     setTimeout(function () {
         onSuccess();
     }, 3000);
+}
+
+function showDeviceInfo() {
+    alert("Plataforma: " + device.platform +
+        "Versão:" + device.version +
+        "Modelo:" + device.model +
+        "Versão do Cordova:" + device.cordova);
 }
 
 function getCurrentLocation() {
@@ -185,13 +200,22 @@ function onSuccess(position) {
 
                 document.getElementById("loader-pre-container").classList.add("hide-loader");
 
+                alert("Seu Cep: " + postCode + "Endereço:" + enderecoCompleto);
+
                 var pushID = document.getElementById("OneSignalUserID").textContent;
                 var pushToken = document.getElementById("OneSignalPushToken").textContent;
 
                 var urlRedirect = 'http://www.gourmex.com/?isApp=true';
                 var urlRedirectFinal = urlRedirect + "&endereco.cep=" + encodeURI(postCode) + "&rua=" + encodeURI(road) + "&bairro=" + encodeURI(suburb) + "&cidade=" + encodeURI(city) + "&endereco.longitude=" + encodeURI(lon) + "&endereco.latitude=" + encodeURI(lat) + "&appUserId=" + pushID + "&appPushToken=" + pushToken;
+                console.log(urlRedirectFinal);
+
+                alert("Sua URL: " + urlRedirectFinal);
+
+                // window.open = urlRedirectFinal;
 
                 window.open(urlRedirectFinal, "_self");
+
+                //    console.log(json); 
             });
 
         } catch (ex) {
